@@ -1,0 +1,74 @@
+$default-body-font-size-rem: 1.4rem;
+$default-body-font-size-px: 14px;
+
+// h
+$default-h6-font-size: 2.4rem; // 24px
+$default-heading-color: rgb(46, 55, 61);
+$default-heading-margin: 30px 0;
+$default-heading-font-family: 'Hind', sans-serif;
+$default-heading-color: rgb(46, 55, 61);
+
+// p
+$default-font-family: 'Roboto', sans-serif;
+$default-font-color: rgb(81, 92, 100);
+
+$default-max-card-width: 32rem;
+$default-min-card-width: 26rem;
+
+html {
+  font-size: 62.5%; // 10px
+}
+
+body {
+  font-family: $default-font-family;
+  font-size: $default-body-font-size-px;
+  font-size: $default-body-font-size-rem;
+  color: $default-font-color;
+}
+
+
+@mixin card($max-width:$default-max-card-width, $min-width:$default-min-card-width) {
+  float: left;
+  border-radius: 2px;
+//  border: 1px solid;
+//  border-color: rgba(0, 0, 0, .075);
+  box-shadow: rgba(43, 44, 48, .2) 2px 2px 7px;
+  max-width: $max-width;
+  min-width: $min-width;
+  min-height: 13rem;
+  margin: 20px;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+
+  h6 {
+    color: $default-heading-color;
+    font-size: $default-h6-font-size;
+    font-weight: 300;
+    margin: 0 0 1rem;
+//    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(43, 44, 48, .1);
+    padding-bottom: 1rem;
+  }
+
+  p {
+    color: rgb(124, 139, 152);
+    line-height: 1.4;
+  }
+}
+
+.card-sml {
+  // 32, 26
+  @include card();
+}
+
+.card-md {
+  @include card(48rem);
+}
+
+.card-lg {
+  @include card(64rem);
+}
+
+.card {
+  @include card(auto, 26rem);
+}
