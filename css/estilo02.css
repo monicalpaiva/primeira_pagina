@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body {
+    background-image: url("../img/planodefundo03.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 20px;
+    background-attachment: fixed;
+}
+
+	div#cabecalho2{
+		background-color:black; 
+		color: white; 
+		padding:20px;
+		text-align:center;
+	}
+	div#cabecalho2 img{
+		float: left; 
+		width:100px;
+		height:100px;
+		}
+	
+	section#direito {
+		display:block;
+		width: 25%;
+		float: left;
+		background-color:#0066FF;
+		color:white;
+		border: 1px solid #ffffff;
+		margin: 0px;
+	}
+			
+	aside#central {
+		display: block;
+		width:65%;
+		float: right;
+		padding:20px;
+		margin:0px;
+	}	
+	
+	iframe#frame-spec {
+		width: 700px;
+		height: 500px;
+		border: none;
+		overflow: hidden;
+	}	
+	iframe#frame-spec::-webkit-scrollbar{
+		display: none;
+	}

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+body {
+    background-image: url("../img/planodefundo01.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 20px;
+    background-attachment: fixed;
+}

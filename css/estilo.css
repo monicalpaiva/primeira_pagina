@@ -1,74 +1,64 @@
-$default-body-font-size-rem: 1.4rem;
-$default-body-font-size-px: 14px;
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Diplomata+SC);
 
-// h
-$default-h6-font-size: 2.4rem; // 24px
-$default-heading-color: rgb(46, 55, 61);
-$default-heading-margin: 30px 0;
-$default-heading-font-family: 'Hind', sans-serif;
-$default-heading-color: rgb(46, 55, 61);
-
-// p
-$default-font-family: 'Roboto', sans-serif;
-$default-font-color: rgb(81, 92, 100);
-
-$default-max-card-width: 32rem;
-$default-min-card-width: 26rem;
-
-html {
-  font-size: 62.5%; // 10px
+div#interface{
+	width: 100%;
+	margin: 10px auto 10px auto;
+	box-shadow: 0px 0px 10px black;
 }
 
-body {
-  font-family: $default-font-family;
-  font-size: $default-body-font-size-px;
-  font-size: $default-body-font-size-rem;
-  color: $default-font-color;
+header#cabecalho{
+	/*border-bottom: 1px #000000 solid;*/
+	height:100%;
 }
 
-
-@mixin card($max-width:$default-max-card-width, $min-width:$default-min-card-width) {
-  float: left;
-  border-radius: 2px;
-//  border: 1px solid;
-//  border-color: rgba(0, 0, 0, .075);
-  box-shadow: rgba(43, 44, 48, .2) 2px 2px 7px;
-  max-width: $max-width;
-  min-width: $min-width;
-  min-height: 13rem;
-  margin: 20px;
-  padding: 1rem 2rem;
-  box-sizing: border-box;
-
-  h6 {
-    color: $default-heading-color;
-    font-size: $default-h6-font-size;
-    font-weight: 300;
-    margin: 0 0 1rem;
-//    margin-bottom: 2rem;
-    border-bottom: 1px solid rgba(43, 44, 48, .1);
-    padding-bottom: 1rem;
-  }
-
-  p {
-    color: rgb(124, 139, 152);
-    line-height: 1.4;
-  }
+header#cabecalho h6{ 
+	color:black;
+	margin:50px 30px 30px 30px;
+	padding: 0px;
+	text-align:center;
+	font-family: 'Diplomata SC', cursive;
+	font-size:150%;
+	text-shadow: 2px 2px 2px blue;
 }
 
-.card-sml {
-  // 32, 26
-  @include card();
+nav#menu ul{
+	list-style: none;
+    text-transform: uppercase;
+	position: absolute;
+	top:-15px;
+	left:0%;
 }
 
-.card-md {
-  @include card(48rem);
+footer {
+	background-color:black;
+	height:100%;
+	color:white;
+	clear:both;
+	text-align:center;
 }
 
-.card-lg {
-  @include card(64rem);
+nav#menu li{
+	display:inline;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s;
+}
+nav#menu li:hover{
+	background: #606060;
+}
+nav#menu h1{
+	display: none;
 }
 
-.card {
-  @include card(auto, 26rem);
+nav#menu a{
+	color: #000000;
+	text-decoration: none;
+}	
+nav#menu a:hover{
+	color:#ffffff;
+}
+nav#menu a:active{
+	background-color: #191970;
 }

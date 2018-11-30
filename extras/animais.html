@@ -1,0 +1,68 @@
+<!-- animais -->
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+<title> Natureza </title>
+<meta charset="UTF-8">
+<style>
+figure.foto-legenda{
+		position: relative;
+		left: 0x;
+		top: -10px;
+		width: 100%;
+		height: 100%;
+	}
+	figure.foto-legenda img{
+		display:block;
+		width: 90%;
+		float: left;
+		
+	}
+	figure.foto-legenda figcaption{
+		opacity: 0;
+		position: absolute;
+		top:0px;
+		background-color: rgba(0,0,0,.4);
+		color: white;
+		width: 100%;
+		height: 80%;
+		padding: 25%;
+		box-sizing: border-box;
+		transition: opacity 1s;
+	}	
+	figure.foto-legenda:hover figcaption{
+		opacity: 1;
+	}
+</style>
+</head>
+
+<script language="javascript" src="../javaScript/funcoes.js"></script>
+
+<body style="background-color: transparent">
+
+
+<figure class="foto-legenda">
+	<img src="../img/onca_pintada.png" alt="não encontrado"/> 
+	<figcaption>
+		<h1> ONÇA PINTADA</h1>
+<pre>A onça-pintada ou jaguar, também conhecida por onça-preta, 
+		é uma espécie de mamífero carnívoro da família Felidae 
+		encontrada nas Américas. É o terceiro maior felino do 
+		mundo, após o tigre e o leão, e o maior do continente 
+		americano.
+			Nome científico: Panthera onca
+			Peso: 56 – 96 kg (Adulto)
+			Altura: 63 – 76 cm (Adulto, até ao ombro)
+			Expectativa de Vida: 12 – 15 anos (na natureza)
+			Classificação: Espécie
+			Estado de Conservação: Quase ameaçada (Decrescentes)
+			Classificação superior: Panthera</pre>
+	</figcaption>
+</figure>
+
+
+</body>
+</html>

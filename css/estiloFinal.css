@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+body {
+    background-image: url("../img/planodefundo06.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 20px;
+    background-attachment: fixed;
+}
+
+	table, th, td{
+		border: 1px solid black;
+		border-collapse: collapse;
+		
+		}
+	th, td{padding: 5px;
+		text-align:center;
+		}
+		
+	form {
+	width: 500px;
+	margin: auto;
+	}
+	
+	input, textarea{
+		font-family: sans-serif;
+		font-size: 13pt;
+		font-weigth: normal;
+		background-color: rgba(255,255,255,.5);
+	}
+	
+	input:hover, textarea:hover{
+		background-color: #dddddd;
+	}
+	
+	legend{
+		color: #888888;
+		font-weigth: bold;
+		font-size:13px;
+		font-family: sans-serif;
+	}
+
+	fieldset{
+		border-color:#cecece;
+		margin: 20px;
+	}
+	
+	fieldset#sexo{
+		width:200px;
+	}
+	
+	fieldset#usuario{
+		background: url("img/usuario.png") no-repeat 95% 95%;
+	}
+	
+	fieldset#endereco{
+		background: url("img/endereco.png") no-repeat 95% 95%;
+	}
+	
+	fieldset#mensagem{
+		background: url("img/mensagem.png") no-repeat 95% 95%;
+	}
+	
+	fieldset#ajuda{
+		background: url("img/ajuda.png") no-repeat 95% 95%;
+	}

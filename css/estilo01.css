@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    background-image: url("../img/planodefundo02.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 20px;
+    background-attachment: fixed;
+}
+	
+/* FORMATAR IMAGEM COM LEGENDA */
+
+	figure.foto-legenda{
+		position: relative;
+		left: -20px;
+		top: -15px;
+		width: 30%;
+		height: 30%;
+	}
+	figure.foto-legenda img{
+		display:block;
+		width: 100%;
+		float: left;
+		
+	}
+
+
+/* FORMATAR TABELA */
+
+	table#tabela01{
+		border-spacing: 0px;
+		margin-left:auto;
+		margin-right:auto;
+		display:block;
+		width: 50%;
+		float: right;
+	}
+	table#tabela01 td{
+		border: 1px solid black;
+		padding: 10px;	
+		text-align: center;
+		vertical-align: center;
+	}

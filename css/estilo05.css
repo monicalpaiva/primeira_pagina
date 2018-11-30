@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+    background-image: url("../img/planodefundo05.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 20px;
+    background-attachment: fixed;
+}
+
+aside#esquerdo{
+	display: block;
+	float: left;
+}
+
+section#direito{
+	display: block;
+	float: right;
+}
+
+div#tv{
+	width: 900px;
+	height: 600px;
+	margin: auto;
+	background: url("../img/tv_led_transp.png") no-repeat;
+	background-repeat: no-repeat;
+}
+
+video#trailer{
+	display: block;
+	position: relative;
+	left: 20px;
+	top: 40px;
+	width: 740px;
+}
+
+iframe#frame-spec{
+	display: block;
+	position: relative;
+	left: 30px;
+	top: 30px;
+	width: 670px;
+	height: 370px;
+}

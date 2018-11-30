@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+<title>Obrigada pela visita</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+<link rel="stylesheet" type="text/css" href="css/estiloFinal.css">
+</head>
+<script language="javascript" src="javaScript/funcoes.js"></script>
+<script>
+	function calc_total(){
+		var qtd = parseInt(document.getElementById('cQtd').value);
+		tot=qtd*1500;
+		document.getElementById('cTot').value = tot;
+	}
+</script>
+<body style="background-color:lightgrey">
+<div id="interface">
+<header id="cabecalho">
+<h6>
+<img  id="icone" src="img/faleconosco.png" alt="não encontrado" width="100" height="100">
+Obrigada pela visita
+<img src="img/icon10.png" alt="não encontrado" width="100" height="100">
+</h6>
+
+<nav id=menu>
+<h1> MENU PRINCIPAL	</h1>
+<ul>
+	<li onmouseover="mudaFoto('img/casa.png')" onmouseout="mudaFoto('img/faleconosco.png')"><a href="placinom.html"> HOME</a></li>
+	<li onmouseover="mudaFoto('img/diversao.png')" onmouseout="mudaFoto('img/faleconosco.png')"><a href="anexo01.html"> Uma brincadeira</a></li>
+	<li onmouseover="mudaFoto('img/noticias.png')" onmouseout="mudaFoto('img/faleconosco.png')"><a href="anexo02.html"> Notícias</a></li>
+	<li onmouseover="mudaFoto('img/flores.png')" onmouseout="mudaFoto('img/faleconosco.png')"><a href="anexo03.html"> Natureza</a></li>
+	<li onmouseover="mudaFoto('img/som.png')" onmouseout="mudaFoto('img/faleconosco.png')"><a href="anexo04.html"> Musica</a></li>
+	<li onmouseover="mudaFoto('img/icon7.png')" onmouseout="mudaFoto('img/faleconosco.png')"><a href="anexo05.html"> Filmes</a></li>
+	<li onmouseover="mudaFoto('img/faleconosco.png')" onmouseout="mudaFoto('img/faleconosco.png')"><a href="final.html"> Fale conosco</a></li>
+</ul> </nav>
+</header>
+
+<form style="color:white"method="post" id="fContato" action="mailto:placinom@yahoo.com.br" oninput="calc_total()";>
+
+<fieldset id="usuario"> <legend>Identificaçao do usuario</legend>
+	<p><label for="cNome">nome:</label> 
+		<input type="text" name="tNome" id="cName" size="20" maxlength="30" placeholder="Nome completo"/></p>
+	<p><label for="cSenha">senha:</label> 
+		<input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="Senha"/></p>
+	<p><label for="cEmail">e-mail:</label> 
+		<input type="email" name="tEmail" id="cEmail" size="20" maxlength="30" placeholder="Email"/></p>
+
+<fieldset id="sexo"> <legend>sexo:</legend>
+	<input type="radio" name="tSexo" id="cMasc" checked/> <label for="cMasc">Masculino</label>
+	<input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
+</fieldset>
+
+	<p><label for="cNasc"> Data de nascimento:</label> <input type="date" name="tNasc" id="cNasc"/></p>
+</fieldset>
+
+<fieldset id="endereco"><legend> Endereço do Usuário </legend>
+	<p><label for="cRua">Logradouro:<label>
+		<input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav"/></p>
+	<p><label for="cNum">numero:<label>
+		<input type="text" name="tNum" id="cNum" size="13" maxlength="80" placeholder="Numero"/></p>
+	<p><label for="cEst">Estado:<label>
+		<select nome="tEst" id="cEst">
+			<optgroup label="Região Nordeste">
+				<option value="RN" selected>Rio Grande do Norte</option>
+			</optgroup>
+			<optgroup label="Região Sudeste">
+				<option value="RJ">Rio de Janeiro</option>
+			</optgroup>
+			<optgroup label="Região Sul">
+				<option value="RS">Rio Grande do Sul</option>
+			</optgroup>
+		</select>
+	</p>
+	<p><label for="cCid">Cidade:<label>
+		<input type="text" name="tCd" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidade"/></p>
+		<datalist id="cidade">
+			<option value="Natal"></option>
+			<option value="Parnamirim"></option>
+			<option value="Macaiba"></option>
+		</datalist>
+		
+</fieldset>
+
+<fieldset id="mensagem"><legend> Mensagem do usuario</legend>
+	<p><label for="cUrg"> Grau de Urgência:</label>
+		Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx
+	</p>
+	<p><label for="cMsg">Mensagem:</label>
+		<textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+	</p>
+</fieldset>
+
+<fieldset id="ajuda"><legend>Quero ajudar</legend>
+	<p>
+		<input type="checkbox" name="tPed" id="cPed" checked/>
+		<label for="cPed">Gostaria de ajudar</label>
+	</p>
+	<p><label for="cCor">Cor:</label>
+		<input type="color" name="tCor" id="cCor" value="#0000FF"/>
+	</p>
+	<p><label for="cQtd">Quantidade:</label>
+		<input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"/>
+	</p>
+	<p><label for="cTot">Preço total: R$</label>
+		<input type="text" name="tTop" id="cTot" placeholder="Total a pagar" readonly/>
+	</p>
+</fieldset>
+
+<!-- <input type="submit" value="Enviar"/> -->
+<input type="image" name=" tEnviar" src="img/enviar.png"/>
+
+</form>
+
+<footer>
+<center>
+<img src="img\html5.png" alt="no encontrado" style="float: left;width:175px;height:125px;">
+<img src="img\icon3.png" alt="não encontrado" style="float: right;width:175px;height:125px;">
+
+<a href="placinom.html"> Home </a><br>
+<a href="anexo01.html"> 01 Uma brincadeira </a><br>
+<a href="anexo02.html"> 02 Notícias</a><br>
+<a href="anexo03.html"> 03 Natureza</a><br>
+<a href="anexo04.html"> 04 Musica</a><br>
+<a href="anexo05.html"> 05 Filmes</a><br>
+
+
+<address>
+Escrito por Placinom<br>
+E-mail: placinom@yahoo.com.br<br>
+</address>
+</center>
+</footer>
+</div>
+</body>
+</html>
