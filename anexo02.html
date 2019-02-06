@@ -6,29 +6,27 @@
 <title>Noticias</title>
 <meta charset="UTF-8"/>
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
-<link rel="stylesheet" type="text/css" href="css/estilo01.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
-<script language="javascript" src="javaScript/funcoes.js"></script>
 
 <body>
-<div id="interface">
-<header id="cabecalho">
-<h6>
-<img  id="icone" src="img/noticias.png" alt="não encontrado" width="100" height="100">
-NOVIDADES
-<img src="img/mundo.png" alt="não encontrado" width="100" height="100">
-</h6>
-
-<nav id=menu>
-<h1> MENU PRINCIPAL	</h1>
-<ul>
-	<li onmouseover="mudaFoto('img/casa.png')" onmouseout="mudaFoto('img/noticias.png')"><a href="placinom.html"> HOME</a></li>
-	<li onmouseover="mudaFoto('img/diversao.png')" onmouseout="mudaFoto('img/noticias.png')"><a href="anexo01.html"> Uma brincadeira</a></li>
-	<li onmouseover="mudaFoto('img/noticias.png')" onmouseout="mudaFoto('img/noticias.png')"><a href="anexo02.html"> Notícias</a></li>
-	<li onmouseover="mudaFoto('img/flores.png')" onmouseout="mudaFoto('img/noticias.png')"><a href="anexo03.html"> Natureza</a></li>
-	<li onmouseover="mudaFoto('img/som.png')" onmouseout="mudaFoto('img/noticias.png')"><a href="anexo04.html"> Musica</a></li>
-	<li onmouseover="mudaFoto('img/icon7.png')" onmouseout="mudaFoto('img/noticias.png')"><a href="anexo05.html"> Filmes</a></li>
-	<li onmouseover="mudaFoto('img/icon10.png')" onmouseout="mudaFoto('img/noticias.png')"><a href="final.html"> Fale conosco</a></li>
+<div class="container">
+  		<div class="row justify-content-center">
+		<header id="cabecalho" class="col-12 mb-3">
+			<h6>
+				<img  id="icone" src="img/noticias.png" alt="não encontrado" width="100" height="100">
+					NOVIDADES
+				<img src="img/mundo.png" alt="não encontrado" width="100" height="100">
+			</h6>
+		<nav>
+				<ul class="nav justify-content-center">
+	<li  class="nav-item" onmouseover="mudaFoto('img/casa.png')" onmouseout="mudaFoto('img/noticias.png')"><a class="nav-link active" href="placinom.html"> Home</a></li>
+	<li  class="nav-item"onmouseover="mudaFoto('img/diversao.png')" onmouseout="mudaFoto('img/noticias.png')"><a class="nav-link active" href="anexo01.html"> Uma brincadeira</a></li>
+	<li  class="nav-item" onmouseover="mudaFoto('img/noticias.png')" onmouseout="mudaFoto('img/noticias.png')"><a class="nav-link active" href="anexo02.html"> NOTÍCIAS</a></li>
+	<li  class="nav-item" onmouseover="mudaFoto('img/flores.png')" onmouseout="mudaFoto('img/noticias.png')"><a class="nav-link active" href="anexo03.html"> Natureza</a></li>
+	<li  class="nav-item" onmouseover="mudaFoto('img/som.png')" onmouseout="mudaFoto('img/noticias.png')"><a class="nav-link active" href="anexo04.html"> Musica</a></li>
+	<li class="nav-item"  onmouseover="mudaFoto('img/icon7.png')" onmouseout="mudaFoto('img/noticias.png')"><a class="nav-link active" href="anexo05.html"> Filmes</a></li>
+	<li  class="nav-item" onmouseover="mudaFoto('img/icon10.png')" onmouseout="mudaFoto('img/noticias.png')"><a class="nav-link active" href="final.html"> Fale conosco</a></li>
 </ul> </nav>
 </header>
 
@@ -37,7 +35,7 @@ NOVIDADES
 
 
 
-<footer class="central">
+<footer class="container central mt-3">
 <img src="img/html5.png" alt="no encontrado" style="float: left;width:175px;height:125px;">
 <img src="img/icon3.png" alt="não encontrado" style="float: right;width:175px;height:125px;">
 
@@ -55,5 +53,7 @@ E-mail: placinom@yahoo.com.br<br>
 </address>
 </footer>
 </div>
+<script language="javascript" src="javaScript/funcoes.js"></script>
+
 </body>
 </html>
